@@ -1,0 +1,14 @@
+---
+# Needed for add-apt-repository
+- name: Install python-software-properties
+  apt: pkg=python-software-properties state=installed update-cache=yes
+  tags:
+    - apt
+
+- name: Add repository key
+  apt_key: data="{{ lookup('file', '4BD736A82B5C1B00.gpg') }}"  state=present
+  tags:
+    - apt
+
+- name: Add repository
+  apt_repository: repo='${cassandra.repo}' state=present

@@ -1,0 +1,10 @@
+---
+- name: Install Cassandra
+  apt: pkg=cassandra state=latest update-cache=yes
+  register: cassandra_install
+  tags:
+    - packages
+
+- name: Install Cassandra config file
+  template: src=cassandra.yaml dest=/etc/cassandra/cassandra.yaml
+  notify: restart cassandra

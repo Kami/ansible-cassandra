@@ -1,0 +1,7 @@
+---
+- name: 'Cassandra Playbook'
+  hosts: cassandra_nodes
+  user: root
+
+  roles:
+    - cassandra
