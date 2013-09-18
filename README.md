@@ -27,4 +27,5 @@ ansible-playbook -i ansible.host setup.yml
 
 ## License
 
-Apache 2.0.
+This playbook is distributed under the
+[Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0.html).
