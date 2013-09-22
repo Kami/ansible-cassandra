@@ -1,3 +1,19 @@
 ---
+cassandra:
+  version: '2.0.0'
+  version_branch: '2.0'
+
+  repo_key_url: 'http://keyserver.ubuntu.com/pks/lookup?op=get&fingerprint=on&search=0x4BD736A82B5C1B00'
+  repo_key_file: '4BD736A82B5C1B00.gpg'
+  dependencies:
+    - 'openjdk-7-jre'
+    - 'openjdk-7-jdk'
+
+cassandra_1_2:
+  repo: 'deb http://www.apache.org/dist/cassandra/debian 12x main'
+
+cassandra_2_0:
+  repo: 'deb http://www.apache.org/dist/cassandra/debian 20x main'
+
 config:
   cluster_name: 'MyCluster'

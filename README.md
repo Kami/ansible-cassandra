@@ -22,7 +22,6 @@ ansible-playbook -i ansible.host setup.yml
 
 * Support multiple node deployments
 * Parameterize more cassandra.yaml options
-* Support older Cassandra versions (1.1 and 1.2)
 * Allow user to specify JDK & JRE version (1.6 and 1.7)
 
 ## License

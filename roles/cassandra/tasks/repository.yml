@@ -10,5 +10,14 @@
   tags:
     - apt
 
-- name: Add repository
-  apt_repository: repo='${cassandra.repo}' state=present
+- name: Add Cassandra 1.2 repository
+  apt_repository: repo='${cassandra_1_2.repo}' state=present
+  when: cassandra.version_branch == '1.2'
+  tags:
+    - apt
+
+- name: Add Cassandra 2.0 repository
+  apt_repository: repo='${cassandra_2_0.repo}' state=present
+  when: cassandra.version_branch == '2.0'
+  tags:
+    - apt
