@@ -17,3 +17,7 @@ cassandra_2_0:
 
 config:
   cluster_name: 'MyCluster'
+  data_file_directories:
+    - '/var/lib/cassandra/data'
+  commitlog_directory: '/var/lib/cassandra/commitlog'
+  saved_caches_directory: '/var/lib/cassandra/saved_caches'
