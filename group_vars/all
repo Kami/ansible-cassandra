@@ -21,3 +21,4 @@ config:
     - '/var/lib/cassandra/data'
   commitlog_directory: '/var/lib/cassandra/commitlog'
   saved_caches_directory: '/var/lib/cassandra/saved_caches'
+  log_level: 'info'
