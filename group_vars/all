@@ -1,6 +1,6 @@
 ---
 cassandra:
-  version: '2.0.0'
+  version: '2.0.1'
   version_branch: '2.0'
 
   repo_key_url: 'http://keyserver.ubuntu.com/pks/lookup?op=get&fingerprint=on&search=0x4BD736A82B5C1B00'
