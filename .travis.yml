@@ -1,0 +1,11 @@
+language: python
+
+python:
+  - "2.7"
+
+script:
+  - find . -name '*.yml' -not -path './.travis.yml'  -not -path './roles/*/files/*' | xargs -t -n1 ansible-playbook --syntax-check
+
+notifications:
+  email:
+    - tomaz+travisci@tomaz.me
