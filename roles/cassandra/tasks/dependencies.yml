@@ -1,6 +1,6 @@
 ---
 - name: Install JDK & JRE
-  apt: pkg=${item} state=installed update-cache=yes
+  apt: pkg={{ item }} state=installed update-cache=yes
   register: jdk_installed
   with_items: ${cassandra.dependencies}
   tags:
